@@ -48,7 +48,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    
     width: 300px;
 } 
 
@@ -57,12 +57,14 @@ ion-icon{
     display: inline-flex;
     color: #000;
     margin-top: 2px;
+    padding: 0 20px;
 }
 
 .info a{
     color: #000;
     flex: 1;
     text-decoration: none;
+    padding: 20px;
 }
 
 .info a:hover{
