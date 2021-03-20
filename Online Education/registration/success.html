@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/styles.css"/>
+    <title>Update</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <section id="main">
+      <div id="content__container">
+        <div class="success_container">
+          <ion-icon name="checkmark-circle-outline"></ion-icon><span class="success">Registered Successfully</span>
+          <p class="success__message">Course: <span></span></p>
+        </div>
+      </div>
+      <header>
+        <div class="wrapper">
+          <div class="logo">
+            <ul>
+              <li><a href="#">D</a></li>
+            </ul>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="../index.html" title="Home">
+                  <ion-icon name="home-outline"></ion-icon></a></li>
+              <li><a class="active" href="../courses.html" title="Courses">
+                  <ion-icon name="book-outline"></ion-icon></a></li>
+              <li><a href="../contact.html" title="FAQ's">
+                  <ion-icon name="chatbox-outline"></ion-icon></a></li>
+            </ul>
+          </nav>
+          <div class="foot">
+            <ul>
+              <li><a href="#">
+                  <ion-icon name="settings-outline"></ion-icon></a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </section>
+    <script>
+      var search = window.location.search;
+      var urlParams = new URLSearchParams(search)
+      var course = urlParams.get('course_name')
+      var message = document.querySelector('.success__message span');
+      console.log(message)
+      console.log(course)
+      if(course == "e96997a8-1")
+          message.innerHTML = `Software Development`
+      else if (course=="e96a68c9-1")
+          message.innerHTML = `Front-End Web Development`
+    </script>
+  </body>
+</html>

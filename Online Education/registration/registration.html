@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/styles.css"/>
+    <title>Update</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <section id="main">
+      <div id="content__container">
+        <div class="form__container">
+          <form action="submit.php" method="POST" enctype="multipart/form-data">
+            <h1 class="main__heading">Course Name</h1>
+            <div class="form__heading">
+              <h1>Personal Info</h1><span></span>
+            </div>
+            <div class="input__column">
+              <div class="input">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="first_name" placeholder="First Name"/>
+              </div>
+              <div class="input">
+                <label for="second_name">Second Name:</label>
+                <input type="text" id="second_name" name="second_name" placeholder="Second Name"/>
+              </div>
+            </div>
+            <div class="input__column">
+              <div class="input">
+                <label for="gender">Gender:</label>
+                <div class="radio">
+                  <input type="radio" name="gender" value="male" id="male"/>
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" value="female" id="female"/>
+                  <label for="female">Female</label>
+                </div>
+              </div>
+              <div class="input">
+                <label for="dateofbirth">Date of Birth:</label>
+                <input type="date" id="dateofbirth" name="dateofbirth" placeholder="dateofbirth"/>
+              </div>
+            </div>
+            <div class="input__column">
+              <div class="input">
+                <label for="phone">Phone:</label>
+                <input type="number" id="phone" name="phone" placeholder="Phone Number"/>
+              </div>
+              <div class="input">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="email"/>
+              </div>
+            </div>
+            <div class="form__heading">
+              <h1>Address Info</h1><span></span>
+            </div>
+            <div class="input__column">
+              <div class="input">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Address"/>
+              </div>
+            </div>
+            <div class="input__column">
+              <div class="input">
+                <label for="town">Town/City:</label>
+                <input type="text" id="town" name="town" placeholder="Town/City"/>
+              </div>
+              <div class="input">
+                <label for="district">District:</label>
+                <input type="text" id="district" name="district" placeholder="District"/>
+              </div>
+              <div class="input">
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="State"/>
+              </div>
+            </div>
+            <div class="input__column">
+              <div class="input">
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Country"/>
+              </div>
+              <div class="input">
+                <label for="pincode">Pincode:</label>
+                <input type="number" id="pincode" name="pincode" placeholder="Pincode"/>
+              </div>
+            </div>
+            <div class="form__heading">
+              <h1>Photo & Signature</h1><span></span>
+            </div>
+            <div class="input__column">
+              <div class="input">
+                <p class="file__upload--title">Upload your Photo</p>
+                <div class="file__upload">
+                  <ion-icon class="icon" name="document-outline"></ion-icon>
+                  <label class="photo" for="photo">Choose Your Image</label>
+                  <input type="file" name="photo" id="photo" hidden="hidden"/>
+                </div>
+              </div>
+              <div class="input">
+                <p class="file__upload--title">Upload your Signature</p>
+                <div class="file__upload">
+                  <ion-icon class="icon" name="document-outline"></ion-icon>
+                  <label class="signature" for="signature">Choose Your Signature</label>
+                  <input type="file" name="signature" id="signature" hidden="hidden"/>
+                </div>
+              </div>
+            </div>
+            <div class="input__column">
+              <div class="input">
+                <input type="text" id="course_name" name="course_name" hidden="hidden"/>
+              </div>
+            </div>
+            <div class="cta">
+              <input class="btn" type="submit" value="Register Now"/>
+            </div>
+          </form>
+        </div>
+      </div>
+      <header>
+        <div class="wrapper">
+          <div class="logo">
+            <ul>
+              <li><a href="#">D</a></li>
+            </ul>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="../index.html" title="Home">
+                  <ion-icon name="home-outline"></ion-icon></a></li>
+              <li><a class="active" href="../courses.html" title="Courses">
+                  <ion-icon name="book-outline"></ion-icon></a></li>
+              <!--li: a(href="#"): ion-icon(name="bookmark-outline")-->
+              <li><a href="../contact.html" title="Contact Us">
+                  <ion-icon name="chatbox-outline"></ion-icon></a></li>
+            </ul>
+          </nav>
+          <div class="foot">
+            <ul>
+              <li><a href="#">
+                  <ion-icon name="settings-outline"></ion-icon></a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+    </section>
+    <script>
+      var search = window.location.search;
+      var urlParams = new URLSearchParams(search)
+      var course = urlParams.get('course_name')
+      var courseField = document.getElementById('course_name')
+      var heading = document.querySelector('.main__heading')
+      courseField.value = course;
+      heading.innerHTML = `${course} Registration`
+      console.log(heading.innerText)
+      console.log(course)
+      
+      var photoInput = document.getElementById('photo');
+      var signatureInput = document.getElementById('signature')
+      var photoLabel = document.querySelector('.photo')
+      var signatureLabel = document.querySelector('.signature')
+      
+      photoInput.addEventListener("change", function(){
+          if (photoInput.value){
+              photoLabel.innerHTML = photoInput.value.match( /[\/\\]([\w\d\s\.\-\(\)]+)$/)[1]
+          }else{
+              photoLabel.innerHTML = 'Choose Your Image'
+          }
+      
+      })
+      signatureInput.addEventListener("change", function(){
+          if (signatureInput.value){
+              signatureLabel.innerHTML = signatureInput.value.match( /[\/\\]([\w\d\s\.\-\(\)]+)$/)[1]
+          }else{
+              signatureLabel.innerHTML = 'Choose Your Signature'
+          }
+      
+      })
+    </script>
+  </body>
+</html>

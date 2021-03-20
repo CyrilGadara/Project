@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="desk">
+        <div class="logo">
+          <h1>LOGO</h1>
+        </div>
+        <ul class="links">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="about.html">About</a></li>
+          <li class="link"><a href="blog.html">Blog</a></li>
+          <li class="link"><a href="faq.html">Faq</a></li>
+          <li class="link"><a href="contact.html">Contact</a></li>
+          <li class="link sub"><a href="#">Booking</a>
+            <ul class="sub-linksd">
+              <li class="sub-link"><a href="#">Ticket Cancel</a></li>
+              <li class="sub-link"><a href="#">Print Download</a></li>
+            </ul>
+          </li>
+          <li class="link cta"><a href="#">Buy Tickets</a></li>
+          <li class="link cta"><a href="signin.html">Sign In</a></li>
+        </ul>
+      </nav>
+      <nav class="mobile">
+        <div class="logo">
+          <h1>LOGO</h1>
+        </div>
+        <ul class="linksm">
+          <li class="link"><a href="index.html">Home</a></li>
+          <li class="link"><a href="about.html">About</a></li>
+          <li class="link"><a href="blog.html">Blog</a></li>
+          <li class="link"><a href="faq.html">Faq</a></li>
+          <li class="link"><a href="contact.html">Contact</a></li>
+          <li class="link subm"><a href="#">Booking</a>
+            <ul class="sub-links">
+              <li class="sub-linkm"><a href="#">Ticket Cancel</a></li>
+              <li class="sub-linkm"><a href="#">Print Download</a></li>
+            </ul>
+          </li>
+          <li class="link cta"><a href="#">Buy Tickets</a></li>
+          <li class="link cta"><a href="signin.html">Sign In</a></li>
+        </ul>
+        <div class="menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+    </header>
+    <section id="breadcrumb">
+      <h1 class="title">Faqs</h1>
+      <div class="bredcrumb"><a href="index.html">Home</a>
+        <p>/</p><a class="active" href="faq.html">Faqs</a>
+      </div>
+    </section>
+    <div id="accordion">
+      <div class="container">
+        <div class="content">
+          <button class="accordion active">Where can i get some?</button>
+          <div class="accordion-content"> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae animi error ratione repudiandae accusamus nemo repellat exercitationem illo ipsa natus.</p>
+          </div>
+          <button class="accordion">What is Lorem Ipsum?</button>
+          <div class="accordion-content"> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae animi error ratione repudiandae accusamus nemo repellat exercitationem illo ipsa natus.</p>
+          </div>
+          <button class="accordion">Why do we use it?</button>
+          <div class="accordion-content"> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae animi error ratione repudiandae accusamus nemo repellat exercitationem illo ipsa natus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae animi error ratione repudiandae accusamus nemo repellat exercitationem illo ipsa natus.</p>
+          </div>
+        </div>
+        <div class="subscribe">
+          <div class="container">
+            <h3 class="tagline">Sign up for </h3>
+            <h2 class="title">Our Newsletter</h2>
+            <form action="">
+              <input type="text" placeholder="Your Email Address"/>
+              <input type="submit" value="SUBSCRIBE"/>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="copyrights">
+          <h6 class="copyright">&copy; All Rights Reserved.</h6>
+        </div>
+        <div class="socials">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
+          <ion-icon name="logo-stackoverflow"></ion-icon>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/scripts/script.js"></script>
+    <script>
+      var accordions = document.querySelectorAll('.accordion')
+      for(var i = 0; i<accordions.length; i++){
+          accordions[i].onclick = function(){
+              for(let j = 0; j<accordions.length; j++){
+                  accordions[j].classList.remove('active');
+                  if(j!=i){
+                      accordions[j].nextElementSibling.style.maxHeight = null;
+                  }
+              }
+              this.classList.add('active');
+              var content = this.nextElementSibling;
+              if(content.style.maxHeight){
+                  content.style.maxHeight = null;
+              }else{
+                  content.style.maxHeight = content.scrollHeight + 'px';
+              }
+          }
+      }
+    </script>
+  </body>
+</html>

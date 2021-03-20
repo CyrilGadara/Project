@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/profileedit.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+   <link rel="stylesheet" href="css/all.css">
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+   <link rel="stylesheet" href="fonts/fontawesome-all.min.css">
+   <link rel="stylesheet" href="fonts/font-awesome.min.css">
+   <link rel="stylesheet" href="fonts/fontawesome5-overrides.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
+</head>
+
+<body>
+   <div id="wrapper">
+
+      <div class="d-flex flex-column" id="content-wrapper">
+         <div id="content" style="    background: url(img/homebg.jpg);
+         height: 31vh;
+         background-size: cover;
+         background-repeat: no-repeat;">
+            <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top" style="
+   
+            box-shadow: none!important;
+            width: 80%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.0)!important;
+        ">
+               <div class="container-fluid">
+                  <a href="index.html" style="text-decoration: none; color: #fff;">
+                     <h1 style="font-size: 35px;font-family: 'Great Vibes', cursive;">Wonder Matrimony</h1>
+                  </a>
+                  <ul class="nav navbar-nav flex-nowrap ml-auto">
+
+
+                     <li class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                           aria-expanded="false" href="#"></a>
+
+
+
+                        <div class="shadow dropdown-list dropdown-menu dropdown-menu-right"
+                           aria-labelledby="alertsDropdown"></div>
+                     </li>
+
+                     <li class="nav-item dropdown no-arrow" role="presentation">
+                     <li class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                           aria-expanded="false" href="#"><span
+                              class="d-none d-lg-inline mr-2 text-gray-600 small">Valerie Luna</span><img
+                              class="border rounded-circle img-profile" src="img/profile.png"></a>
+                        <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a
+                              class="dropdown-item" role="presentation" href="editprofile.html"><i
+                                 class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Edit Profile</a>
+                           <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation"
+                              href="login.html"><i
+                                 class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Logout</a>
+                        </div>
+                     </li>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+         <section id="editprofile">
+            <div class="row-edt">
+               <div class="col-edt col-20 user-info">
+                  <img src="img/profile2.png" alt="">
+                  <h1>Ravi Kumar</h1>
+                  <p>Location</p>
+                  <p class="about">Hi not to good at this but here we go . I\'m really into my motobikes and any other
+                     sport u can kill ya self doing. I\'m a fun loving person but I love to party.
+                     But also I really love my animals.</p>
+               </div>
+               <div class="col-edt col-50">
+                  <div class="links">
+                     <a href="editprofile.html" class="active">Profile</a>
+                     <a href="addphotos.html">Photos</a>
+                  </div>
+                  <h2>General</h2>
+                  <label for="iam">I am:</label>
+                  <select name="iam" id="iam">
+                     <option value="man">Man</option>
+                     <option value="woman">Woman</option>
+                     <option value="other">Other</option>
+                  </select>
+                  <hr>
+                  <label for="seeking">Seeking A:</label>
+                  <select name="seeking" id="seeking">
+                     <option value="man">Man</option>
+                     <option value="woman">Woman</option>
+                     <option value="other">Other</option>
+                  </select>
+                  <hr>
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" min="10" max="100" placeholder="20">
+                  <hr>
+                  <label for="country">Country:</label>
+                  <input type="text" id="country" placeholder="Country">
+                  <hr>
+                  <label for="state">State:</label>
+                  <select name="state" id="state">
+                     <option value="andhrapradesh">Andhra Pradesh</option>
+                     <option value="arunachalpradesh">Arunachal Pradesh</option>
+                     <option value="assam">Assam</option>
+                     <option value="bihar">Bihar</option>
+                     <option value="chhattisgarh">Chhattisgarh</option>
+                     <option value="goa">Goa</option>
+                     <option value="gujarat">Gujarat</option>
+                     <option value="haryana">Haryana</option>
+                     <option value="himlachalpradesh">Himlachal Pradesh</option>
+                     <option value="jammuandkashmir">Jammu and Kashmir</option>
+                     <option value="jharkand">Jharkand</option>
+                     <option value="karnataka">Karnataka</option>
+                     <option value="kerala">Kerala</option>
+                     <option value="madhyapradesh">Madhya Pradesh</option>
+                     <option value="maharashtra">Maharashtra</option>
+                     <option value="manipur">Manipur</option>
+                     <option value="meghalaya">Meghalaya</option>
+                     <option value="mizoram">Mizoram</option>
+                     <option value="nagaland">Nagaland</option>
+                     <option value="odisha">Odisha</option>
+                     <option value="punjab">Punjab</option>
+                     <option value="rajasthan">Rajasthan</option>
+                     <option value="sikkim">Sikkim</option>
+                     <option value="tamilnadu">Tamilnadu</option>
+                     <option value="telangana" selected>Telangana</option>
+                     <option value="tripura">tripura</option>
+                     <option value="uttarpradesh">Uttar Pradesh</option>
+                     <option value="uttarakhand">Uttarakhand</option>
+                     <option value="westbengal">West Bengal</option>
+                  </select>
+                  <hr>
+                  <label for="town">Town/Village</label>
+                  <input type="text" id="town" placeholder="Town/Village">
+                  <hr>
+                  <label for="pincode">Pin Code:</label>
+                  <input type="number" id="pincode" min="10" max="100" placeholder="506167">
+                  <hr>
+
+
+                  <h2>Profile Questions</h2>
+                  <label for="religion">Religion</label>
+                  <select name="religion" id="religion">
+                     <option value="hindu">Hindu</option>
+                     <option value="muslim">Muslim</option>
+                     <option value="christian">Christian</option>
+                     <option value="sikh">Sikh</option>
+                  </select>
+                  <hr>
+                  <label for="caste">Cast</label>
+                  <select name="caste" id="caste">
+                     <option value="0">Caste / Division - Any</option>
+                     <option value="Caste_766">24 Manai Telugu Chettiar</option>
+                     <option value="Caste_797">96 Kuli Maratha</option>
+                     <option value="Caste_963">Aaru Nattu Vellala</option>
+                     <option value="Caste_890">Achirapakkam Chettiar</option>
+                     <option value="Caste_1">Ad Dharmi</option>
+                     <option value="Caste_692">Adi Andhra</option>
+                     <option value="Caste_2">Adi Dravidar</option>
+                     <option value="Caste_693">Adi Karnataka</option>
+                     <option value="Caste_935">Agamudayar / Arcot / Thuluva Vellala</option>
+                     <option value="Caste_891">Agaram Vellan Chettiar</option>
+                     <option value="Caste_3">Agarwal</option>
+                     <option value="Caste_4">Agnikula Kshatriya</option>
+                     <option value="Caste_862">Agrahari</option>
+                     <option value="Caste_5">Agri</option>
+                     <option value="Caste_741">Ahir Shimpi</option>
+                     <option value="Caste_977">Ahirwar</option>
+                     <option value="Caste_6">Ahom</option>
+                     <option value="Caste_7">Ambalavasi</option>
+                     <option value="Caste_181">Amil Sindhi </option>
+                     <option value="Caste_260">Anavil Brahmin </option>
+                     <option value="Caste_839">Anjana (Chowdary) Patel</option>
+                     <option value="Caste_800">Aramari / Gabit</option>
+                     <option value="Caste_294">Arekatica</option>
+                     <option value="Caste_281">Arora</option>
+                     <option value="Caste_8">Arunthathiyar</option>
+                     <option value="Caste_9">Arya Vysya</option>
+                     <option value="Caste_863">Asathi</option>
+                     <option value="Caste_261">Audichya Brahmin </option>
+                     <option value="Caste_892">Ayira Vysya</option>
+                     <option value="Caste_923">Ayodhyavasi</option>
+                     <option value="Caste_685">Ayyaraka</option>
+                     <option value="Caste_673">Badaga</option>
+                     <option value="Caste_698">Bagdi</option>
+                     <option value="Caste_182">Baibhand Sindhi </option>
+                     <option value="Caste_10">Baidya</option>
+                     <option value="Caste_978">Bairwa</option>
+                     <option value="Caste_11">Baishnab</option>
+                     <option value="Caste_12">Baishya</option>
+                     <option value="Caste_699">Bajantri</option>
+                     <option value="Caste_979">Balai</option>
+                     <option value="Caste_13">Balija</option>
+                     <option value="Caste_742">Balija Naidu</option>
+                     <option value="Caste_755">Balija Reddy</option>
+                     <option value="Caste_700">Banayat Oriya</option>
+                     <option value="Caste_14">Banik</option>
+                     <option value="Caste_15">Baniya</option>
+                     <option value="Caste_701">Baniya - Bania</option>
+                     <option value="Caste_702">Baniya - Kumuti</option>
+                     <option value="Caste_295">Banjara</option>
+                     <option value="Caste_296">Barai</option>
+                     <option value="Caste_254">Barendra Brahmin </option>
+                     <option value="Caste_297">Bari</option>
+                     <option value="Caste_703">Baria</option>
+                     <option value="Caste_864">Barnwal</option>
+                     <option value="Caste_16">Barujibi</option>
+                     <option value="Caste_893">Beri Chettiar</option>
+                     <option value="Caste_17">Besta</option>
+                     <option value="Caste_18">Bhandari</option>
+                     <option value="Caste_183">Bhanusali Sindhi </option>
+                     <option value="Caste_19">Bhatia</option>
+                     <option value="Caste_184">Bhatia Sindhi </option>
+                     <option value="Caste_298">Bhatraju</option>
+                     <option value="Caste_267">Bhatt Brahmin </option>
+                     <option value="Caste_20">Bhavasar Kshatriya</option>
+                     <option value="Caste_704">Bhoi</option>
+                     <option value="Caste_21">Bhovi</option>
+                     <option value="Caste_737">Bhoyar</option>
+                     <option value="Caste_240">Bhumihar Brahmin </option>
+                     <option value="Caste_22">Billava</option>
+                     <option value="Caste_690">Bishnoi/Vishnoi</option>
+                     <option value="Caste_705">Bondili</option>
+                     <option value="Caste_501">Born Again</option>
+                     <option value="Caste_23">Boyar</option>
+                     <option value="Caste_24">Brahmbatt</option>
+                     <option value="Caste_1000">Brahmin - All</option>
+                     <option value="Caste_260">Brahmin - Anavil</option>
+                     <option value="Caste_823">Brahmin - Anaviln Desai</option>
+                     <option value="Caste_261">Brahmin - Audichya</option>
+                     <option value="Caste_834">Brahmin - Baidhiki/Vaidhiki</option>
+                     <option value="Caste_943">Brahmin - Bardai</option>
+                     <option value="Caste_254">Brahmin - Barendra</option>
+                     <option value="Caste_944">Brahmin - Bhargav</option>
+                     <option value="Caste_267">Brahmin - Bhatt</option>
+                     <option value="Caste_240">Brahmin - Bhumihar</option>
+                     <option value="Caste_762">Brahmin - Dadhich</option>
+                     <option value="Caste_269">Brahmin - Daivadnya</option>
+                     <option value="Caste_286">Brahmin - Danua</option>
+                     <option value="Caste_270">Brahmin - Deshastha</option>
+                     <option value="Caste_290">Brahmin - Dhiman</option>
+                     <option value="Caste_291">Brahmin - Dravida</option>
+                     <option value="Caste_734">Brahmin - Embrandiri</option>
+                     <option value="Caste_245">Brahmin - Garhwali</option>
+                     <option value="Caste_242">Brahmin - Gaur</option>
+                     <option value="Caste_262">Brahmin - Goswami/Gosavi</option>
+                     <option value="Caste_680">Brahmin - Gujar Gaur</option>
+                     <option value="Caste_26">Brahmin - Gurukkal</option>
+                     <option value="Caste_287">Brahmin - Halua</option>
+                     <option value="Caste_271">Brahmin - Havyaka</option>
+                     <option value="Caste_272">Brahmin - Hoysala</option>
+                     <option value="Caste_27">Brahmin - Iyengar</option>
+                     <option value="Caste_28">Brahmin - Iyer</option>
+                     <option value="Caste_299">Brahmin - Jangid</option>
+                     <option value="Caste_288">Brahmin - Jhadua</option>
+                     <option value="Caste_707">Brahmin - Jyotish</option>
+                     <option value="Caste_241">Brahmin - Kanyakubj</option>
+                     <option value="Caste_273">Brahmin - Karhade</option>
+                     <option value="Caste_945">Brahmin - Khadayata</option>
+                     <option value="Caste_706">Brahmin - Khandelwal</option>
+                     <option value="Caste_835">Brahmin - Khedaval</option>
+                     <option value="Caste_283">Brahmin - Kokanastha</option>
+                     <option value="Caste_274">Brahmin - Kota</option>
+                     <option value="Caste_763">Brahmin - Koteshwara / Kota (Madhwa )</option>
+                     <option value="Caste_255">Brahmin - Kulin</option>
+                     <option value="Caste_248">Brahmin - Kumaoni</option>
+                     <option value="Caste_275">Brahmin - Madhwa</option>
+                     <option value="Caste_243">Brahmin - Maithil</option>
+                     <option value="Caste_946">Brahmin - Mevada</option>
+                     <option value="Caste_263">Brahmin - Modh</option>
+                     <option value="Caste_282">Brahmin - Mohyal</option>
+                     <option value="Caste_264">Brahmin - Nagar</option>
+                     <option value="Caste_258">Brahmin - Namboodiri</option>
+                     <option value="Caste_332">Brahmin - Narmadiya </option>
+                     <option value="Caste_292">Brahmin - Niyogi</option>
+                     <option value="Caste_25">Brahmin - Others</option>
+                     <option value="Caste_694">Brahmin - Paliwal</option>
+                     <option value="Caste_289">Brahmin - Panda</option>
+                     <option value="Caste_246">Brahmin - Pandit</option>
+                     <option value="Caste_962">Brahmin - Panicker</option>
+                     <option value="Caste_708">Brahmin - Pareek</option>
+                     <option value="Caste_337">Brahmin - Pushkarna</option>
+                     <option value="Caste_947">Brahmin - Rajgor</option>
+                     <option value="Caste_256">Brahmin - Rarhi</option>
+                     <option value="Caste_832">Brahmin - Rarhi/Radhi</option>
+                     <option value="Caste_284">Brahmin - Rigvedi</option>
+                     <option value="Caste_257">Brahmin - Rudraj</option>
+                     <option value="Caste_268">Brahmin - Sakaldwipi</option>
+                     <option value="Caste_247">Brahmin - Sanadya</option>
+                     <option value="Caste_276">Brahmin - Sanketi</option>
+                     <option value="Caste_259">Brahmin - Saraswat</option>
+                     <option value="Caste_948">Brahmin - Sarua</option>
+                     <option value="Caste_244">Brahmin - Saryuparin</option>
+                     <option value="Caste_764">Brahmin - Shivalli (Madhva)</option>
+                     <option value="Caste_277">Brahmin - Shivhalli</option>
+                     <option value="Caste_827">Brahmin - Shri Gaud</option>
+                     <option value="Caste_942">Brahmin - Shri Mali</option>
+                     <option value="Caste_265">Brahmin - Shrimali</option>
+                     <option value="Caste_765">Brahmin - Shukla Yajurvedi</option>
+                     <option value="Caste_681">Brahmin - Sikhwal</option>
+                     <option value="Caste_278">Brahmin - Smartha</option>
+                     <option value="Caste_279">Brahmin - Sri Vaishnava</option>
+                     <option value="Caste_280">Brahmin - Stanika</option>
+                     <option value="Caste_949">Brahmin - Tapodhan</option>
+                     <option value="Caste_249">Brahmin - Tyagi</option>
+                     <option value="Caste_285">Brahmin - Vaidiki</option>
+                     <option value="Caste_687">Brahmin - Vaikhanasa</option>
+                     <option value="Caste_950">Brahmin - Valam</option>
+                     <option value="Caste_354">Brahmin - Velanadu</option>
+                     <option value="Caste_266">Brahmin - Vyas</option>
+                     <option value="Caste_951">Brahmin - Zalora</option>
+                     <option value="Caste_731">Brahmin Jijhotia </option>
+                     <option value="Caste_733">Brahmin Malviya </option>
+                     <option value="Caste_710">Brajastha Maithil</option>
+                     <option value="Caste_709">Brajastha Maithil</option>
+                     <option value="Caste_502">Bretheren</option>
+                     <option value="Caste_178">Bunt (Shetty)</option>
+                     <option value="Caste_37">CKP</option>
+                     <option value="Caste_738">Chalawadi and Holeya</option>
+                     <option value="Caste_30">Chambhar</option>
+                     <option value="Caste_31">Chandravanshi Kahar</option>
+                     <option value="Caste_32">Chasa</option>
+                     <option value="Caste_339">Chattada Sri Vaishnava </option>
+                     <option value="Caste_924">Chaturth</option>
+                     <option value="Caste_33">Chaudary</option>
+                     <option value="Caste_34">Chaurasia</option>
+                     <option value="Caste_711">Chennadasar</option>
+                     <option value="Caste_965">Cherakula Vellalar</option>
+                     <option value="Caste_35">Chettiar</option>
+                     <option value="Caste_185">Chhapru Sindhi </option>
+                     <option value="Caste_36">Chhetri</option>
+                     <option value="Caste_301">Chippolu (Mera)</option>
+                     <option value="Caste_880">Choudhary</option>
+                     <option value="Caste_512">Christian - Others</option>
+                     <option value="Caste_503">Church of South India</option>
+                     <option value="Caste_38">Coorgi</option>
+                     <option value="Caste_186">Dadu Sindhi </option>
+                     <option value="Caste_269">Daivadnya Brahmin </option>
+                     <option value="Caste_286">Danua Brahmin </option>
+                     <option value="Caste_129">Darji </option>
+                     <option value="Caste_270">Deshastha Brahmin </option>
+                     <option value="Caste_801">Deshmukh</option>
+                     <option value="Caste_840">Desikar</option>
+                     <option value="Caste_844">Desikar Thanjavur</option>
+                     <option value="Caste_39">Devadiga</option>
+                     <option value="Caste_40">Devandra Kula Vellalar</option>
+                     <option value="Caste_41">Devang Koshthi</option>
+                     <option value="Caste_42">Devanga</option>
+                     <option value="Caste_886">Devanga Chettiar</option>
+                     <option value="Caste_135">Devar/Thevar/Mukkulathor</option>
+                     <option value="Caste_740">Devrukhe Brahmin</option>
+                     <option value="Caste_980">Dhanak</option>
+                     <option value="Caste_43">Dhangar</option>
+                     <option value="Caste_44">Dheevara</option>
+                     <option value="Caste_45">Dhiman</option>
+                     <option value="Caste_290">Dhiman Brahmin </option>
+                     <option value="Caste_46">Dhoba</option>
+                     <option value="Caste_47">Dhobi</option>
+                     <option value="Caste_732">Dhor / Kakkayya</option>
+                     <option value="Caste_712">Dommala</option>
+                     <option value="Caste_865">Dosar / Dusra</option>
+                     <option value="Caste_291">Dravida Brahmin </option>
+                     <option value="Caste_302">Dumal</option>
+                     <option value="Caste_303">Dusadh (Paswan)</option>
+                     <option value="Caste_48">Ediga</option>
+                     <option value="Caste_743">Ediga /Goud (Balija)</option>
+                     <option value="Caste_894">Elur Chetty</option>
+                     <option value="Caste_734">Embrandiri Brahmin </option>
+                     <option value="Caste_504">Evangelist</option>
+                     <option value="Caste_49">Ezhava</option>
+                     <option value="Caste_775">Ezhava Panicker</option>
+                     <option value="Caste_776">Ezhava Thandan</option>
+                     <option value="Caste_50">Ezhuthachan</option>
+                     <option value="Caste_51">Gabit</option>
+                     <option value="Caste_866">Gahoi</option>
+                     <option value="Caste_744">Gajula / Kavarai</option>
+                     <option value="Caste_684">Ganda</option>
+                     <option value="Caste_881">Gandha Vanika</option>
+                     <option value="Caste_52">Gandla</option>
+                     <option value="Caste_768">Gandla / Ganiga</option>
+                     <option value="Caste_53">Ganiga</option>
+                     <option value="Caste_54">Garhwali</option>
+                     <option value="Caste_245">Garhwali Brahmin </option>
+                     <option value="Caste_713">Gatti</option>
+                     <option value="Caste_242">Gaur Brahmin </option>
+                     <option value="Caste_55">Gavara</option>
+                     <option value="Caste_304">Gawali</option>
+                     <option value="Caste_305">Ghisadi</option>
+                     <option value="Caste_56">Ghumar</option>
+                     <option value="Caste_57">Goala</option>
+                     <option value="Caste_58">Goan</option>
+                     <option value="Caste_306">Gomantak</option>
+                     <option value="Caste_307">Gondhali</option>
+                     <option value="Caste_262">Goswami/Gosavi Brahmin </option>
+                     <option value="Caste_250">Goud</option>
+                     <option value="Caste_59">Gounder</option>
+                     <option value="Caste_777">Gounder - Kongu Vellala Gounder</option>
+                     <option value="Caste_778">Gounder - Nattu Gounder</option>
+                     <option value="Caste_904">Gounder - Others</option>
+                     <option value="Caste_779">Gounder - Urali Gounder</option>
+                     <option value="Caste_780">Gounder - Vanniya Kula Kshatriyar</option>
+                     <option value="Caste_781">Gounder - Vettuva Gounder</option>
+                     <option value="Caste_60">Gowda</option>
+                     <option value="Caste_782">Gowda - Kuruba Gowda</option>
+                     <option value="Caste_308">Gramani</option>
+                     <option value="Caste_61">Gudia</option>
+                     <option value="Caste_680">Gujar Gaur Brahmin </option>
+                     <option value="Caste_310">Gujjar</option>
+                     <option value="Caste_925">Gulahre</option>
+                     <option value="Caste_62">Gupta</option>
+                     <option value="Caste_311">Guptan</option>
+                     <option value="Caste_309">Gurav</option>
+                     <option value="Caste_312">Gurjar</option>
+                     <option value="Caste_26">Gurukkal Brahmin </option>
+                     <option value="Caste_792">Haihaivanshi</option>
+                     <option value="Caste_714">Halba Koshti</option>
+                     <option value="Caste_287">Halua Brahmin </option>
+                     <option value="Caste_271">Havyaka Brahmin </option>
+                     <option value="Caste_715">Helava</option>
+                     <option value="Caste_272">Hoysala Brahmin </option>
+                     <option value="Caste_313">Hugar (Jeer)</option>
+                     <option value="Caste_187">Hyderabadi Sindhi </option>
+                     <option value="Caste_966">Illaththu Pillai</option>
+                     <option value="Caste_63">Intercaste</option>
+                     <option value="Caste_64">Irani</option>
+                     <option value="Caste_936">Isai Vellalar</option>
+                     <option value="Caste_27">Iyengar Brahmin </option>
+                     <option value="Caste_28">Iyer Brahmin </option>
+                     <option value="Caste_314">Jaalari</option>
+                     <option value="Caste_505">Jacobite</option>
+                     <option value="Caste_601">Jain - Agarwal</option>
+                     <option value="Caste_602">Jain - Bania</option>
+                     <option value="Caste_603">Jain - Intercaste</option>
+                     <option value="Caste_604">Jain - Jaiswal</option>
+                     <option value="Caste_613">Jain - KVO</option>
+                     <option value="Caste_605">Jain - Khandelwal</option>
+                     <option value="Caste_606">Jain - Kutchi</option>
+                     <option value="Caste_608">Jain - Oswal</option>
+                     <option value="Caste_609">Jain - Others</option>
+                     <option value="Caste_610">Jain - Porwal</option>
+                     <option value="Caste_611">Jain - Unspecified</option>
+                     <option value="Caste_612">Jain - Vaishya</option>
+                     <option value="Caste_65">Jaiswal</option>
+                     <option value="Caste_315">Jandra</option>
+                     <option value="Caste_66">Jangam</option>
+                     <option value="Caste_299">Jangid Brahmin </option>
+                     <option value="Caste_316">Jangra - Brahmin</option>
+                     <option value="Caste_67">Jat</option>
+                     <option value="Caste_29">Jatav</option>
+                     <option value="Caste_313">Jeer </option>
+                     <option value="Caste_716">Jetty/Malla</option>
+                     <option value="Caste_802">Jhadav</option>
+                     <option value="Caste_288">Jhadua Brahmin </option>
+                     <option value="Caste_731">Jijhotia Brahmin</option>
+                     <option value="Caste_317">Jogi (Nath)</option>
+                     <option value="Caste_981">Julaha</option>
+                     <option value="Caste_318">Kachara</option>
+                     <option value="Caste_251">Kadava Patel</option>
+                     <option value="Caste_691">Kahar</option>
+                     <option value="Caste_68">Kaibarta</option>
+                     <option value="Caste_955">Kaikaala</option>
+                     <option value="Caste_695">Kalal</option>
+                     <option value="Caste_739">Kalanji</option>
+                     <option value="Caste_69">Kalar</option>
+                     <option value="Caste_70">Kalinga</option>
+                     <option value="Caste_319">Kalinga Vysya</option>
+                     <option value="Caste_71">Kalita</option>
+                     <option value="Caste_72">Kalwar</option>
+                     <option value="Caste_73">Kamboj</option>
+                     <option value="Caste_74">Kamma</option>
+                     <option value="Caste_816">Kamma Naidu</option>
+                     <option value="Caste_982">Kanakkan Padanna</option>
+                     <option value="Caste_983">Kandara</option>
+                     <option value="Caste_75">Kansari</option>
+                     <option value="Caste_241">Kanyakubj Brahmin </option>
+                     <option value="Caste_783">Kanykubj Bania</option>
+                     <option value="Caste_76">Kapu</option>
+                     <option value="Caste_785">Kapu Naidu</option>
+                     <option value="Caste_928">Kapu Reddy</option>
+                     <option value="Caste_956">Karakala Bhakthula</option>
+                     <option value="Caste_77">Karana</option>
+                     <option value="Caste_273">Karhade Brahmin </option>
+                     <option value="Caste_841">Karkathar</option>
+                     <option value="Caste_78">Karmakar</option>
+                     <option value="Caste_957">Karni Bhakthula</option>
+                     <option value="Caste_79">Karuneegar</option>
+                     <option value="Caste_80">Kasar</option>
+                     <option value="Caste_867">Kasaundhan</option>
+                     <option value="Caste_81">Kashyap</option>
+                     <option value="Caste_895">Kasukara</option>
+                     <option value="Caste_320">Katiya</option>
+                     <option value="Caste_750">Kavara</option>
+                     <option value="Caste_717">Kavuthiyya/Ezhavathy</option>
+                     <option value="Caste_82">Kayastha</option>
+                     <option value="Caste_787">Kayastha (Bengali)</option>
+                     <option value="Caste_938">Kerala Mudali</option>
+                     <option value="Caste_868">Keshri (Kesarwani)</option>
+                     <option value="Caste_83">Khandayat</option>
+                     <option value="Caste_84">Khandelwal</option>
+                     <option value="Caste_718">Kharwa</option>
+                     <option value="Caste_321">Kharwar</option>
+                     <option value="Caste_984">Khatik</option>
+                     <option value="Caste_85">Khatri</option>
+                     <option value="Caste_719">Kirar</option>
+                     <option value="Caste_506">Knanaya</option>
+                     <option value="Caste_507">Knanaya Catholic</option>
+                     <option value="Caste_508">Knanaya Jacobite</option>
+                     <option value="Caste_968">Kodikal Pillai</option>
+                     <option value="Caste_326">Koiri </option>
+                     <option value="Caste_283">Kokanastha Brahmin </option>
+                     <option value="Caste_322">Kokanastha Maratha</option>
+                     <option value="Caste_86">Koli</option>
+                     <option value="Caste_689">Koli Mahadev</option>
+                     <option value="Caste_720">Koli Patel</option>
+                     <option value="Caste_757">Komti /Arya Vaishya</option>
+                     <option value="Caste_896">Kongu Chettiar</option>
+                     <option value="Caste_813">Kongu Nadar</option>
+                     <option value="Caste_87">Kongu Vellala Gounder</option>
+                     <option value="Caste_88">Konkani</option>
+                     <option value="Caste_721">Korama</option>
+                     <option value="Caste_89">Kori</option>
+                     <option value="Caste_849">Kori/Koli</option>
+                     <option value="Caste_722">Kosthi</option>
+                     <option value="Caste_274">Kota Brahmin </option>
+                     <option value="Caste_723">Krishnavaka</option>
+                     <option value="Caste_90">Kshatriya</option>
+                     <option value="Caste_793">Kshatriya Kurmi</option>
+                     <option value="Caste_929">Kshatriya Raju</option>
+                     <option value="Caste_91">Kudumbi</option>
+                     <option value="Caste_92">Kulal</option>
+                     <option value="Caste_93">Kulalar</option>
+                     <option value="Caste_255">Kulin Brahmin </option>
+                     <option value="Caste_94">Kulita</option>
+                     <option value="Caste_248">Kumaoni Brahmin </option>
+                     <option value="Caste_974">Kumaoni Rajput</option>
+                     <option value="Caste_323">Kumawat</option>
+                     <option value="Caste_95">Kumbhakar</option>
+                     <option value="Caste_96">Kumbhar</option>
+                     <option value="Caste_97">Kumhar</option>
+                     <option value="Caste_98">Kummari</option>
+                     <option value="Caste_99">Kunbi</option>
+                     <option value="Caste_804">Kunbi Lonari</option>
+                     <option value="Caste_805">Kunbi Maratha</option>
+                     <option value="Caste_806">Kunbi Tirale</option>
+                     <option value="Caste_324">Kuravan</option>
+                     <option value="Caste_325">Kurmi</option>
+                     <option value="Caste_100">Kurmi/Kurmi Kshatriya</option>
+                     <option value="Caste_958">Kurni</option>
+                     <option value="Caste_101">Kuruba</option>
+                     <option value="Caste_102">Kuruhina Shetty</option>
+                     <option value="Caste_887">Kuruhini Chetty</option>
+                     <option value="Caste_103">Kurumbar</option>
+                     <option value="Caste_850">Kuruva</option>
+                     <option value="Caste_326">Kushwaha (Koiri)</option>
+                     <option value="Caste_104">Kutchi</option>
+                     <option value="Caste_882">Lad</option>
+                     <option value="Caste_105">Lambadi</option>
+                     <option value="Caste_188">Larai Sindhi </option>
+                     <option value="Caste_189">Larkana Sindhi </option>
+                     <option value="Caste_509">Latin Catholic</option>
+                     <option value="Caste_252">Leva patel</option>
+                     <option value="Caste_253">Leva patil</option>
+                     <option value="Caste_751">Linga Balija</option>
+                     <option value="Caste_106">Lingayath</option>
+                     <option value="Caste_327">Lodhi Rajput</option>
+                     <option value="Caste_107">Lohana</option>
+                     <option value="Caste_190">Lohana Sindhi </option>
+                     <option value="Caste_677">Lohar</option>
+                     <option value="Caste_724">Loniya</option>
+                     <option value="Caste_108">Lubana</option>
+                     <option value="Caste_759">Madhesiya/Kanu/Halwai</option>
+                     <option value="Caste_275">Madhwa Brahmin </option>
+                     <option value="Caste_109">Madiga</option>
+                     <option value="Caste_110">Mahajan</option>
+                     <option value="Caste_111">Mahar</option>
+                     <option value="Caste_112">Mahendra</option>
+                     <option value="Caste_113">Maheshwari</option>
+                     <option value="Caste_869">Maheshwari / Meshri</option>
+                     <option value="Caste_114">Mahishya</option>
+                     <option value="Caste_926">Mahor</option>
+                     <option value="Caste_870">Mahuri</option>
+                     <option value="Caste_975">Mair Rajput Swarnkar</option>
+                     <option value="Caste_243">Maithil Brahmin </option>
+                     <option value="Caste_115">Majabi</option>
+                     <option value="Caste_116">Mala</option>
+                     <option value="Caste_510">Malankara Catholic</option>
+                     <option value="Caste_117">Mali</option>
+                     <option value="Caste_118">Mallah</option>
+                     <option value="Caste_733">Malviya Brahmin</option>
+                     <option value="Caste_807">Malwani</option>
+                     <option value="Caste_119">Mangalorean</option>
+                     <option value="Caste_120">Manipuri</option>
+                     <option value="Caste_897">Manjapudur Chettiar</option>
+                     <option value="Caste_985">Mannan / Velan / Vannan</option>
+                     <option value="Caste_122">Mapila</option>
+                     <option value="Caste_123">Maratha</option>
+                     <option value="Caste_803">Maratha Kshatriya</option>
+                     <option value="Caste_511">Marthoma</option>
+                     <option value="Caste_124">Maruthuvar</option>
+                     <option value="Caste_125">Matang</option>
+                     <option value="Caste_328">Mathur</option>
+                     <option value="Caste_927">Mathur Vaishya</option>
+                     <option value="Caste_735">Maurya / Shakya</option>
+                     <option value="Caste_126">Meena</option>
+                     <option value="Caste_127">Meenavar</option>
+                     <option value="Caste_986">Meghwal</option>
+                     <option value="Caste_128">Mehra</option>
+                     <option value="Caste_301">Mera </option>
+                     <option value="Caste_129">Meru Darji</option>
+                     <option value="Caste_130">Mochi</option>
+                     <option value="Caste_131">Modak</option>
+                     <option value="Caste_263">Modh Brahmin </option>
+                     <option value="Caste_883">Modi</option>
+                     <option value="Caste_767">Modikarlu</option>
+                     <option value="Caste_132">Mogaveera</option>
+                     <option value="Caste_282">Mohyal Brahmin </option>
+                     <option value="Caste_133">Mudaliyar</option>
+                     <option value="Caste_134">Mudiraj</option>
+                     <option value="Caste_135">Mukkulathor </option>
+                     <option value="Caste_121">Munnuru Kapu</option>
+                     <option value="Caste_400">Muslim - Ansari</option>
+                     <option value="Caste_401">Muslim - Arain</option>
+                     <option value="Caste_402">Muslim - Awan</option>
+                     <option value="Caste_403">Muslim - Bohra</option>
+                     <option value="Caste_404">Muslim - Dekkani</option>
+                     <option value="Caste_405">Muslim - Dudekula</option>
+                     <option value="Caste_406">Muslim - Hanafi</option>
+                     <option value="Caste_407">Muslim - Jat</option>
+                     <option value="Caste_408">Muslim - Khoja</option>
+                     <option value="Caste_409">Muslim - Lebbai</option>
+                     <option value="Caste_410">Muslim - Malik</option>
+                     <option value="Caste_411">Muslim - Mapila</option>
+                     <option value="Caste_412">Muslim - Maraicar</option>
+                     <option value="Caste_413">Muslim - Memon</option>
+                     <option value="Caste_414">Muslim - Mughal</option>
+                     <option value="Caste_424">Muslim - Others</option>
+                     <option value="Caste_415">Muslim - Pathan</option>
+                     <option value="Caste_416">Muslim - Qureshi</option>
+                     <option value="Caste_417">Muslim - Rajput</option>
+                     <option value="Caste_418">Muslim - Rowther</option>
+                     <option value="Caste_419">Muslim - Shafi</option>
+                     <option value="Caste_420">Muslim - Sheikh</option>
+                     <option value="Caste_421">Muslim - Siddiqui</option>
+                     <option value="Caste_422">Muslim - Syed</option>
+                     <option value="Caste_423">Muslim - UnSpecified</option>
+                     <option value="Caste_752">Musukama</option>
+                     <option value="Caste_136">Muthuraja</option>
+                     <option value="Caste_329">Naagavamsam</option>
+                     <option value="Caste_761">Nabit</option>
+                     <option value="Caste_137">Nadar</option>
+                     <option value="Caste_264">Nagar Brahmin </option>
+                     <option value="Caste_330">Nagaralu</option>
+                     <option value="Caste_138">Nai</option>
+                     <option value="Caste_139">Naicker</option>
+                     <option value="Caste_939">Naicker - Others</option>
+                     <option value="Caste_814">Naicker - Vanniya Kula Kshatriyar</option>
+                     <option value="Caste_140">Naidu</option>
+                     <option value="Caste_141">Naik</option>
+                     <option value="Caste_343">Naika </option>
+                     <option value="Caste_142">Nair</option>
+                     <option value="Caste_143">Namasudra / Namassej</option>
+                     <option value="Caste_331">Nambiar</option>
+                     <option value="Caste_258">Namboodiri Brahmin </option>
+                     <option value="Caste_753">Namdarlu</option>
+                     <option value="Caste_969">Nanjil Mudali</option>
+                     <option value="Caste_1007">Nanjil Nattu Vellalar</option>
+                     <option value="Caste_1008">Nanjil Vellalar</option>
+                     <option value="Caste_973">Nanjil pillai</option>
+                     <option value="Caste_970">Nankudi Vellalar</option>
+                     <option value="Caste_144">Napit</option>
+                     <option value="Caste_332">Narmadiya Brahmin </option>
+                     <option value="Caste_317">Nath </option>
+                     <option value="Caste_788">Nattu Gounder</option>
+                     <option value="Caste_898">Nattukottai Chettiar</option>
+                     <option value="Caste_145">Nayaka</option>
+                     <option value="Caste_333">Neeli</option>
+                     <option value="Caste_959">Neeli Saali</option>
+                     <option value="Caste_871">Nema</option>
+                     <option value="Caste_146">Nepali</option>
+                     <option value="Caste_960">Nessi</option>
+                     <option value="Caste_147">Nhavi</option>
+                     <option value="Caste_292">Niyogi Brahmin </option>
+                     <option value="Caste_519">Not Specified</option>
+                     <option value="Caste_786">Ontari</option>
+                     <option value="Caste_148">Oswal</option>
+                     <option value="Caste_334">Otari</option>
+                     <option value="Caste_842">Othuvaar</option>
+                     <option value="Caste_149">Padmasali</option>
+                     <option value="Caste_888">Padmashali</option>
+                     <option value="Caste_884">Padmavati Porwal</option>
+                     <option value="Caste_754">Pagadala</option>
+                     <option value="Caste_150">Pal</option>
+                     <option value="Caste_845">Pallan / Devandra Kula Vellalan</option>
+                     <option value="Caste_987">Panan</option>
+                     <option value="Caste_151">Panchal</option>
+                     <option value="Caste_289">Panda Brahmin </option>
+                     <option value="Caste_688">Pandaram</option>
+                     <option value="Caste_246">Pandit Brahmin </option>
+                     <option value="Caste_971">Pandiya Vellalar</option>
+                     <option value="Caste_152">Panicker</option>
+                     <option value="Caste_899">Pannirandam Chettiar</option>
+                     <option value="Caste_988">Paravan / Bharatar</option>
+                     <option value="Caste_933">Parit</option>
+                     <option value="Caste_153">Parkava Kulam</option>
+                     <option value="Caste_154">Parsi</option>
+                     <option value="Caste_335">Partraj</option>
+                     <option value="Caste_769">Parvatha Rajakulam</option>
+                     <option value="Caste_155">Pasi</option>
+                     <option value="Caste_303">Paswan </option>
+                     <option value="Caste_976">Paswan / Dusadh</option>
+                     <option value="Caste_156">Patel</option>
+                     <option value="Caste_676">Pathare Prabhu</option>
+                     <option value="Caste_808">Patil</option>
+                     <option value="Caste_157">Patnaick/Sistakaranam</option>
+                     <option value="Caste_158">Patra</option>
+                     <option value="Caste_770">Pattinavar</option>
+                     <option value="Caste_889">Pattusali</option>
+                     <option value="Caste_872">Patwa</option>
+                     <option value="Caste_513">Pentecost</option>
+                     <option value="Caste_336">Perika</option>
+                     <option value="Caste_790">Perika/Puragiri Kshatriya</option>
+                     <option value="Caste_159">Pillai</option>
+                     <option value="Caste_683">Poosala</option>
+                     <option value="Caste_160">Porwal</option>
+                     <option value="Caste_873">Porwal / Porwar</option>
+                     <option value="Caste_989">Poundra</option>
+                     <option value="Caste_161">Prajapati</option>
+                     <option value="Caste_990">Pulaya / Cheruman</option>
+                     <option value="Caste_337">Pushkarna Brahmin </option>
+                     <option value="Caste_358">Raigar</option>
+                     <option value="Caste_162">Rajaka</option>
+                     <option value="Caste_163">Rajastani</option>
+                     <option value="Caste_686">Rajbhar</option>
+                     <option value="Caste_164">Rajbonshi</option>
+                     <option value="Caste_725">Rajpurohit</option>
+                     <option value="Caste_165">Rajput</option>
+                     <option value="Caste_726">Ramanandi</option>
+                     <option value="Caste_166">Ramdasia</option>
+                     <option value="Caste_167">Ramgariah</option>
+                     <option value="Caste_727">Ramoshi</option>
+                     <option value="Caste_256">Rarhi Brahmin </option>
+                     <option value="Caste_874">Rastogi</option>
+                     <option value="Caste_885">Rathi</option>
+                     <option value="Caste_875">Rauniar</option>
+                     <option value="Caste_168">Ravidasia</option>
+                     <option value="Caste_169">Rawat</option>
+                     <option value="Caste_170">Reddy</option>
+                     <option value="Caste_338">Relli</option>
+                     <option value="Caste_284">Rigvedi Brahmin </option>
+                     <option value="Caste_191">Rohiri Sindhi </option>
+                     <option value="Caste_851">Rohit / Chamar</option>
+                     <option value="Caste_514">Roman Catholic</option>
+                     <option value="Caste_728">Ror</option>
+                     <option value="Caste_257">Rudraj Brahmin </option>
+                     <option value="Caste_176">SC</option>
+                     <option value="Caste_197">SKP</option>
+                     <option value="Caste_214">ST</option>
+                     <option value="Caste_171">Sadgope</option>
+                     <option value="Caste_771">Sadhu Chetty</option>
+                     <option value="Caste_215">Sagara (Uppara)</option>
+                     <option value="Caste_172">Saha</option>
+                     <option value="Caste_192">Sahiti Sindhi </option>
+                     <option value="Caste_173">Sahu</option>
+                     <option value="Caste_174">Saini</option>
+                     <option value="Caste_843">Saiva Pillai Thanjavur</option>
+                     <option value="Caste_810">Saiva Pillai Tirunelveli</option>
+                     <option value="Caste_268">Sakaldwipi Brahmin </option>
+                     <option value="Caste_193">Sakkhar Sindhi </option>
+                     <option value="Caste_175">Saliya</option>
+                     <option value="Caste_991">Samagar</option>
+                     <option value="Caste_852">Sambava</option>
+                     <option value="Caste_247">Sanadya Brahmin </option>
+                     <option value="Caste_276">Sanketi Brahmin </option>
+                     <option value="Caste_259">Saraswat Brahmin </option>
+                     <option value="Caste_244">Saryuparin Brahmin </option>
+                     <option value="Caste_736">Sathwara</option>
+                     <option value="Caste_992">Satnami</option>
+                     <option value="Caste_340">Savji</option>
+                     <option value="Caste_194">Sehwani Sindhi </option>
+                     <option value="Caste_177">Senai Thalaivar</option>
+                     <option value="Caste_341">Senguntha Mudaliyar</option>
+                     <option value="Caste_811">Sengunthar/Kaikolar</option>
+                     <option value="Caste_293">Settibalija</option>
+                     <option value="Caste_748">Setty Balija</option>
+                     <option value="Caste_521">Seventh-day Adventist</option>
+                     <option value="Caste_760">Shaw / Sahu/Teli</option>
+                     <option value="Caste_961">Shettigar</option>
+                     <option value="Caste_178">Shetty </option>
+                     <option value="Caste_195">Shikarpuri Sindhi </option>
+                     <option value="Caste_993">Shilpkar</option>
+                     <option value="Caste_179">Shimpi/Namdev</option>
+                     <option value="Caste_277">Shivhalli Brahmin </option>
+                     <option value="Caste_265">Shrimali Brahmin </option>
+                     <option value="Caste_651">Sikh - Ahluwalia</option>
+                     <option value="Caste_652">Sikh - Arora</option>
+                     <option value="Caste_653">Sikh - Bhatia</option>
+                     <option value="Caste_670">Sikh - Bhatra</option>
+                     <option value="Caste_654">Sikh - Ghumar</option>
+                     <option value="Caste_655">Sikh - Intercaste</option>
+                     <option value="Caste_656">Sikh - Jat</option>
+                     <option value="Caste_657">Sikh - Kamboj</option>
+                     <option value="Caste_658">Sikh - Khatri</option>
+                     <option value="Caste_659">Sikh - Kshatriya</option>
+                     <option value="Caste_660">Sikh - Lubana</option>
+                     <option value="Caste_661">Sikh - Majabi</option>
+                     <option value="Caste_672">Sikh - Nai</option>
+                     <option value="Caste_663">Sikh - Others</option>
+                     <option value="Caste_664">Sikh - Rajput</option>
+                     <option value="Caste_665">Sikh - Ramdasia</option>
+                     <option value="Caste_666">Sikh - Ramgharia</option>
+                     <option value="Caste_669">Sikh - Ravidasia</option>
+                     <option value="Caste_667">Sikh - Saini</option>
+                     <option value="Caste_671">Sikh - Tonk Kshatriya</option>
+                     <option value="Caste_668">Sikh - Unspecified</option>
+                     <option value="Caste_681">Sikhwal Brahmin </option>
+                     <option value="Caste_180">Sindhi</option>
+                     <option value="Caste_181">Sindhi-Amil</option>
+                     <option value="Caste_182">Sindhi-Baibhand</option>
+                     <option value="Caste_183">Sindhi-Bhanusali</option>
+                     <option value="Caste_184">Sindhi-Bhatia</option>
+                     <option value="Caste_185">Sindhi-Chhapru</option>
+                     <option value="Caste_186">Sindhi-Dadu</option>
+                     <option value="Caste_187">Sindhi-Hyderabadi</option>
+                     <option value="Caste_188">Sindhi-Larai</option>
+                     <option value="Caste_189">Sindhi-Larkana</option>
+                     <option value="Caste_190">Sindhi-Lohana</option>
+                     <option value="Caste_191">Sindhi-Rohiri</option>
+                     <option value="Caste_192">Sindhi-Sahiti</option>
+                     <option value="Caste_193">Sindhi-Sakkhar</option>
+                     <option value="Caste_194">Sindhi-Sehwani</option>
+                     <option value="Caste_195">Sindhi-Shikarpuri</option>
+                     <option value="Caste_196">Sindhi-Thatai</option>
+                     <option value="Caste_278">Smartha Brahmin </option>
+                     <option value="Caste_198">Sonar</option>
+                     <option value="Caste_199">Soni</option>
+                     <option value="Caste_994">Sonkar</option>
+                     <option value="Caste_200">Sourashtra</option>
+                     <option value="Caste_900">Sozhia Chetty</option>
+                     <option value="Caste_342">Sozhiya Vellalar</option>
+                     <option value="Caste_279">Sri Vaishnava Brahmin </option>
+                     <option value="Caste_682">Srisayana</option>
+                     <option value="Caste_280">Stanika Brahmin </option>
+                     <option value="Caste_343">Sugali (Naika)</option>
+                     <option value="Caste_344">Sunari</option>
+                     <option value="Caste_201">Sundhi</option>
+                     <option value="Caste_729">Surya Balija</option>
+                     <option value="Caste_202">Suthar</option>
+                     <option value="Caste_203">Swakula Sali</option>
+                     <option value="Caste_515">Syrian Catholic</option>
+                     <option value="Caste_516">Syrian Jacobite</option>
+                     <option value="Caste_517">Syrian Orthodox</option>
+                     <option value="Caste_518">Syro Malabar</option>
+                     <option value="Caste_204">Tamboli</option>
+                     <option value="Caste_205">Tanti</option>
+                     <option value="Caste_206">Tantubai</option>
+                     <option value="Caste_207">Telaga</option>
+                     <option value="Caste_208">Teli</option>
+                     <option value="Caste_772">Telugupatti</option>
+                     <option value="Caste_209">Thakkar</option>
+                     <option value="Caste_675">Thakore</option>
+                     <option value="Caste_210">Thakur</option>
+                     <option value="Caste_995">Thandan</option>
+                     <option value="Caste_196">Thatai Sindhi </option>
+                     <option value="Caste_211">Thigala</option>
+                     <option value="Caste_212">Thiyya</option>
+                     <option value="Caste_758">Thiyya Thandan</option>
+                     <option value="Caste_791">Thogata Veera Kshatriya</option>
+                     <option value="Caste_836">Thogata Veerakshathriya</option>
+                     <option value="Caste_812">Thondai Mandala Vellalar</option>
+                     <option value="Caste_756">Thota</option>
+                     <option value="Caste_213">Tili</option>
+                     <option value="Caste_346">Togata</option>
+                     <option value="Caste_347">Tonk Kshatriya</option>
+                     <option value="Caste_348">Turupu Kapu</option>
+                     <option value="Caste_249">Tyagi Brahmin </option>
+                     <option value="Caste_876">Ummar / Umre / Bagaria</option>
+                     <option value="Caste_696">Urali Gounder</option>
+                     <option value="Caste_349">Urs</option>
+                     <option value="Caste_356">Vada Balija</option>
+                     <option value="Caste_901">Vadambar</option>
+                     <option value="Caste_216">Vaddera</option>
+                     <option value="Caste_818">Vadugan</option>
+                     <option value="Caste_285">Vaidiki Brahmin </option>
+                     <option value="Caste_687">Vaikhanasa Brahmin </option>
+                     <option value="Caste_217">Vaish</option>
+                     <option value="Caste_218">Vaishnav</option>
+                     <option value="Caste_853">Vaishnav Dishaval</option>
+                     <option value="Caste_854">Vaishnav Kapol</option>
+                     <option value="Caste_855">Vaishnav Khadyata</option>
+                     <option value="Caste_856">Vaishnav Lad</option>
+                     <option value="Caste_857">Vaishnav Modh</option>
+                     <option value="Caste_858">Vaishnav Porvad</option>
+                     <option value="Caste_859">Vaishnav Shrimali</option>
+                     <option value="Caste_860">Vaishnav Sorathaiya</option>
+                     <option value="Caste_861">Vaishnav Vania</option>
+                     <option value="Caste_219">Vaishnava</option>
+                     <option value="Caste_220">Vaishya</option>
+                     <option value="Caste_221">Vaishya Vani</option>
+                     <option value="Caste_350">Valluvan</option>
+                     <option value="Caste_222">Valmiki</option>
+                     <option value="Caste_934">Vani</option>
+                     <option value="Caste_877">Vani / Vaishya</option>
+                     <option value="Caste_223">Vania</option>
+                     <option value="Caste_730">Vanika Vyshya</option>
+                     <option value="Caste_224">Vaniya</option>
+                     <option value="Caste_902">Vaniya Chettiar</option>
+                     <option value="Caste_225">Vanjara</option>
+                     <option value="Caste_226">Vanjari</option>
+                     <option value="Caste_227">Vankar</option>
+                     <option value="Caste_228">Vannar</option>
+                     <option value="Caste_229">Vannia Kula Kshatriyar</option>
+                     <option value="Caste_351">Variar</option>
+                     <option value="Caste_352">Varshney</option>
+                     <option value="Caste_878">Varshney (Barahseni)</option>
+                     <option value="Caste_230">Veera Saivam</option>
+                     <option value="Caste_937">Veerakodi Vellala</option>
+                     <option value="Caste_353">Velaan</option>
+                     <option value="Caste_231">Velama</option>
+                     <option value="Caste_354">Velanadu Brahmin </option>
+                     <option value="Caste_232">Vellalar</option>
+                     <option value="Caste_903">Vellan Chettiars</option>
+                     <option value="Caste_233">Veluthedathu Nair</option>
+                     <option value="Caste_355">Vettuva Gounder</option>
+                     <option value="Caste_996">Vettuvan</option>
+                     <option value="Caste_879">Vijayvargia</option>
+                     <option value="Caste_821">Vilakithala Nair</option>
+                     <option value="Caste_234">Vilakkithala Nair</option>
+                     <option value="Caste_236">Vishwakarma</option>
+                     <option value="Caste_235">Viswabrahmin</option>
+                     <option value="Caste_237">Vokkaliga</option>
+                     <option value="Caste_266">Vyas Brahmin </option>
+                     <option value="Caste_238">Vysya</option>
+                     <option value="Caste_239">Yadav</option>
+                     <option value="Caste_819">Yadava Naidu</option>
+                     <option value="Caste_357">Yellapu</option>
+                     <option value="Caste_998">Caste no bar</option>
+                  </select>
+                  <hr>
+                  <label for="marital">Marital Status:</label>
+                  <select name="marital" id="marital">
+                     <option value="married">Married</option>
+                     <option value="unmarried">Unmarried</option>
+                     <option value="divorced">Divorced</option>
+                  </select>
+                  <hr>
+                  <label for="children">Children:</label>
+                  <select name="children" id="children">
+                     <option value="yes">Yes</option>
+                     <option value="no">no</option>
+                  </select>
+                  <hr>
+                  <label for="employ">Employment:</label>
+                  <input type="text" name="employ" id="employ" placeholder="Designation">
+                  <hr>
+                  <label for="iam">Income:</label>
+                  <input type="text" name="income" id="income" placeholder="Ex:20k">
+                  <hr>
+                  <label for="blood">Blood Group:</label>
+                  <select name="blood" id="blood">
+                     <option value="a_negative">A Negative</option>
+                     <option value="a_positive">A Positive</option>
+                     <option value="b_negative">B Negative</option>
+                     <option value="b_positive">B Positive</option>
+                     <option value="ab_negative">AB Negative</option>
+                     <option value="ab_positive">AB Positive</option>
+                     <option value="o_negative">O Negative</option>
+                     <option value="o_positive">O Positive</option>
+                  </select>
+                  <hr>
+                  <label for="smoker">Smoker:</label>
+                  <select name="smoker" id="smoker">
+                     <option value="nonsmoker">Non Smoker</option>
+                     <option value="regularsmoker">Regular Smoker</option>
+                     <option value="partialsmoker">Partial Smoker</option>
+                  </select>
+                  <hr>
+                  <label for="drinker">Drinker</label>
+                  <select name="drinker" id="drinker">
+                     <option value="nondrinker">Non Drinker</option>
+                     <option value="regulardrinker">Regular Drinker</option>
+                     <option value="occassional">Occassional</option>
+                  </select>
+                  <hr>
+                  <label for="hair">Hair Color:</label>
+                  <input type="text" id="hair" name="hair" placeholder="Eg: Black">
+                  <hr>
+                  <label for="education">Education:</label>
+                  <input type="text" id="education" name="education" placeholder="Highest Qualification">
+                  <hr>
+                  <label for="animal_lover">Are you animal Lover?:</label>
+                  <select name="animal_lover" id="animal_lover">
+                     <option value="yes">Yes</option>
+                     <option value="no">No</option>
+                  </select>
+                  <hr>
+                  <label for="interests">My Interests:</label>
+                  <input type="text" id="interests" name="interests" placeholder="My Interests">
+                  <hr>
+                  <label for="iam">About Me:</label>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                  <hr>
+                  <label for="prfilepic">Choose Profile Pic:</label>
+                  <input id="profilepic" type="file" name="myFile">
+                  <hr>
+                  <div class="btn-submit">
+                     <button type="submit" id="update">Update</button:type>
+                  </div>
+
+               </div>
+               <div class="col-edt col-20">
+                  <h1 class="new-profile">New Profiles</h1>
+                  <div class="user-row">
+                     <div class="user-col pro-img">
+                        <img src="img/profile.png" alt="">
+                     </div>
+                     <div class="user-col new-pro">
+                        <a href="#">
+                           <h2>Name</h2>
+                        </a>
+                        <p>Palace</p>
+                     </div>
+                  </div>
+                  <hr>
+                  <div class="user-row">
+                     <div class="user-col pro-img">
+                        <img src="img/profile.png" alt="">
+                     </div>
+                     <div class="user-col new-pro">
+                        <a href="#">
+                           <h2>Name</h2>
+                        </a>
+                        <p>Palace</p>
+                     </div>
+                  </div>
+                  <hr>
+                  <div class="user-row">
+                     <div class="user-col pro-img">
+                        <img src="img/profile.png" alt="">
+                     </div>
+                     <div class="user-col new-pro">
+                        <a href="#">
+                           <h2>Name</h2>
+                        </a>
+                        <p>Palace</p>
+                     </div>
+                  </div>
+                  <hr>
+                  <div class="user-row">
+                     <div class="user-col pro-img">
+                        <img src="img/profile.png" alt="">
+                     </div>
+                     <div class="user-col new-pro">
+                        <a href="#">
+                           <h2>Name</h2>
+                        </a>
+                        <p>Palace</p>
+                     </div>
+                  </div>
+                  <hr>
+               </div>
+            </div>
+         </section>
+
+
+
+
+
+
+
+
+
+         <script src="js/jquery.min.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+         <script src="js/chart.min.js"></script>
+         <script src="js/bs-charts.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+         <script src="js/theme.js"></script>
+</body>
+
+</html>

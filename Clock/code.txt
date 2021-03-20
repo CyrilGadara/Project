@@ -1,0 +1,4 @@
+hrPosition = hrPosition+(3/360);
+    mnPosition = mnPosition+(6/60);
+    scPosition = scPosition+6;
+    console.log(mnPosition)

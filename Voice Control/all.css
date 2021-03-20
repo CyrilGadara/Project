@@ -1,0 +1,49 @@
+/* .talks:hover {
+   cursor: pointer;
+}
+
+
+.commands {
+   margin: 0 auto;
+   width: 100%;
+   display: inline-block;
+}
+
+.items {
+   display: inline-block;
+   vertical-align: top;
+   width: 40%;
+   margin: 0 auto;
+   text-align: center;
+}
+
+ul {
+   width: 100%;
+   text-align: center;
+}
+
+ul li {
+   width: 100%;
+   padding: 20px 0;
+   text-align: center;
+   list-style-type: none;
+} */
+
+.svg {
+   width: 50%;
+   margin: 0 auto;
+   display: inline-block;
+   position: absolute;
+   top: 25px
+
+}
+
+
+._x35_:hover{
+   cursor: pointer;
+}
+
+.voice {
+   color: red;
+   font-size: 70px;
+}
