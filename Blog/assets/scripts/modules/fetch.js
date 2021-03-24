@@ -3,7 +3,7 @@ import { blogTemplate } from './blog.js';
 
 function startLiveUpdate(){
     var blogData;
-        fetch('/blog.json')
+        fetch('https://github.com/CyrilGadara/Project/blob/main/Blog/blog.json')
         .then(function(response){
             return response.json();
         }).then(function(data){
