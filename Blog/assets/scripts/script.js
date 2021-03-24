@@ -1,0 +1,1 @@
+import { startLiveUpdate} from './modules/fetch.js';
