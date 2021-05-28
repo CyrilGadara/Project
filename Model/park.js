@@ -66,7 +66,7 @@ function init(){
     hlight.castShadow = true;
     scene.add(hlight);
 
-    const light = new THREE.DirectionalLight( 0xffffff, 6);
+    const light = new THREE.DirectionalLight( 0xffffff, 3);
     light.position.set( -5,1, 6 ); //default; light shining from top
     light.castShadow = true; // default false
     light.shadow.bias = -0.00029;
