@@ -219,4 +219,3 @@ function handleResize(entries){
         links.forEach(L=> L.classList.remove('showMenu'))
     }
 }
-

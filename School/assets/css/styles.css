@@ -11,6 +11,12 @@ body {
   background-color: #000;
 }
 
+.cardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
 .hamburger {
   position: fixed;
   z-index: 888;
@@ -531,6 +537,8 @@ body {
   color: #000;
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 25px;
+  margin-top: 10px;
 }
 
 .main .mainWrapper .mainContainer .banner .bannerCta {
@@ -545,6 +553,304 @@ body {
   border-radius: 8px;
   text-decoration: none;
   padding: 8px 16px;
+}
+
+.main .mainWrapper .row {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  gap: 25px;
+  margin-top: 25px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .main .mainWrapper .row {
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main .mainWrapper .row .column {
+  width: 100%;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 25px;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .main .mainWrapper .row .column {
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main .mainWrapper .row .column.flexDirection {
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0;
+}
+
+.main .mainWrapper .row .column .card {
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #242732;
+  border-radius: 25px;
+  padding: 25px;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .mainWrapper .row .column .card .container {
+  width: 250px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 425px) {
+  .main .mainWrapper .row .column .card .container {
+    width: 230px;
+  }
+}
+
+.main .mainWrapper .row .column .card .container #myChart {
+  width: 250px !important;
+  height: 250px !important;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 425px) {
+  .main .mainWrapper .row .column .card .container #myChart {
+    width: 230px;
+    height: 230px !important;
+  }
+}
+
+.main .mainWrapper .row .column .card .attendance .attendanceContainer .attendanceTitle {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main .mainWrapper .row .column .card .attendance .attendanceContainer a {
+  text-decoration: none;
+}
+
+.main .mainWrapper .row .column .card .attendance .attendanceContainer a .viewMore {
+  font-size: 12px;
+  color: #ccc;
+  font-weight: 300;
+}
+
+.main .mainWrapper .row .column .card .attendance .attendanceCount {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.main .mainWrapper .row .column .card .attendance .attendanceCount .present {
+  margin-right: 10px;
+}
+
+.main .mainWrapper .row .column .card .attendance .attendanceCount .present .presentCount {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.main .mainWrapper .row .column .card .attendance .attendanceCount .present .attendanceName {
+  font-size: 12px;
+  color: #ccc;
+  font-weight: 300;
+}
+
+.main .mainWrapper .row .column .card .attendance .attendanceCount .absent {
+  margin-left: 10px;
+}
+
+.main .mainWrapper .row .column .card .attendance .attendanceCount .absent .absentCount {
+  font-size: 20px;
+  font-weight: 600;
+  color: #D3776A;
+}
+
+.main .mainWrapper .row .column .card .attendance .attendanceCount .absent .attendanceName {
+  font-size: 12px;
+  color: #ccc;
+  font-weight: 300;
+}
+
+.main .mainWrapper .row .column .card .assignment {
+  width: 100%;
+  background-color: #242732;
+  border-radius: 25px;
+}
+
+.main .mainWrapper .row .column .card .assignment .assignmentTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.main .mainWrapper .row .column .card .assignment .assignmentList {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+
+.main .mainWrapper .row .column .card .assignment .assignmentList .subjectName {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.main .mainWrapper .row .column .card .assignment .assignmentList .progressBar {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .mainWrapper .row .column .card .assignment .assignmentList .progressBar .background {
+  margin-right: 16px;
+  background-color: #ccc;
+  height: 5px;
+  width: 80px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 375px) {
+  .main .mainWrapper .row .column .card .assignment .assignmentList .progressBar .background {
+    width: 50px;
+  }
+}
+
+.main .mainWrapper .row .column .card .assignment .assignmentList .progressBar .background .color {
+  background-color: red;
+  width: 28%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.main .mainWrapper .row .column .card .assignment .assignmentList .progressBar .percentageCount {
+  font-size: 12px;
+}
+
+.main .mainWrapper .row .column .card .leaderboardSection .leaderboardTable table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: scroll;
+}
+
+.main .mainWrapper .row .column .card .leaderboardSection .leaderboardTable table tbody tr td {
+  padding: 0 5px 15px 0;
+}
+
+.main .mainWrapper .row .column .card .leaderboardSection .leaderboardTable table tbody tr td img {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  vertical-align: top;
+}
+
+.main .mainWrapper .row .column .card .leaderboardSection .leaderboardTable table tbody tr .studentName {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.main .mainWrapper .row .column .card .leaderboardSection .leaderboardTable table tbody tr .stats {
+  text-align: center;
+  font-size: 12px;
+  color: #64D2BD;
+  font-weight: 400;
+}
+
+.main .mainWrapper .row .column .card .leaderboardSection .leaderboardTable table tbody tr .percentage {
+  font-size: 16px;
+}
+
+.main .mainWrapper .row .column .card .lessonSection .lessonChart {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.main .mainWrapper .row .column .card .lessonSection .lessonChart #myChart1 {
+  height: 300px !important;
+  width: 300px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .main .mainWrapper .row .column .card .lessonSection .lessonChart {
+    width: 250px;
+  }
+  .main .mainWrapper .row .column .card .lessonSection .lessonChart #myChart1 {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .main .mainWrapper .row .column .card .lessonSection .lessonChart {
+    width: 200px !important;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .main .mainWrapper .row .column .card .lessonSection .lessonChart #myChart {
+    height: 200px !important;
+    width: 200px !important;
+  }
+  .main .mainWrapper .row .column .card .lessonSection .lessonChart #myChart1 {
+    heigth: 200px !important;
+    width: 200px !important;
+  }
 }
 
 .main .mainWrapper .row {
@@ -603,7 +909,11 @@ body {
   font-weight: 600;
 }
 
-.main .mainWrapper .row .left .attendance .attendanceContainer .viewMore {
+.main .mainWrapper .row .left .attendance .attendanceContainer a {
+  text-decoration: none;
+}
+
+.main .mainWrapper .row .left .attendance .attendanceContainer a .viewMore {
   font-size: 12px;
   color: #ccc;
   font-weight: 300;
@@ -736,6 +1046,178 @@ body {
 
 .main .mainWrapper .row .right .assignment .assignmentList .progressBar .percentageCount {
   font-size: 12px;
+}
+
+.main .mainWrapper .row .aleft {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #242732;
+  padding: 25px;
+  border-radius: 25px;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+}
+
+.main .mainWrapper .row .aleft .leaderboard .leaderboardTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.main .mainWrapper .row .aleft .leaderboardContent {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+
+.main .mainWrapper .row .aleft .leaderboardContent .student {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .mainWrapper .row .aleft .leaderboardContent .student img {
+  height: 40px;
+  width: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.main .mainWrapper .row .aleft .leaderboardContent .student .studentName {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.main .mainWrapper .row .aleft .leaderboardContent .studentStats {
+  text-align: center;
+}
+
+.main .mainWrapper .row .aleft .leaderboardContent .studentStats .stats {
+  text-align: center;
+  font-size: 12px;
+  color: #64D2BD;
+  font-weight: 400;
+}
+
+.main .mainWrapper .row .aleft .leaderboardContent .studentPercentage .studentPer {
+  font-size: 16px;
+}
+
+.main .mainWrapper .row .aright {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: .5;
+     -moz-box-flex: .5;
+      -ms-flex: .5;
+          flex: .5;
+  width: 100%;
+}
+
+.main .mainWrapper .row .aright .rightContainer {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex: 1;
+     -moz-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .mainWrapper .row .aright .lessonTop {
+  padding: 25px;
+  border-radius: 25px;
+  background-color: #242732;
+  margin-bottom: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.main .mainWrapper .row .aright .lessonTop .lessonActivities .lessonTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.main .mainWrapper .row .aright .lessonTop .lessonChart #myChart {
+  height: 300px !important;
+  width: auto !important;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 425px) {
+  .main .mainWrapper .row .aright .lessonTop .lessonChart #myChart {
+    text-align: center;
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto;
+  }
+}
+
+.main .mainWrapper .row .aright .performanceBottom {
+  padding: 25px;
+  border-radius: 25px;
+  background-color: #242732;
+  width: 100%;
+}
+
+.main .mainWrapper .row .aright .performanceBottom .lessonActivities .lessonTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.main .mainWrapper .row .aright .performanceBottom .lessonChart #myChart1 {
+  height: 300px !important;
+  width: auto !important;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 425px) {
+  .main .mainWrapper .row .aright .performanceBottom .lessonChart #myChart1 {
+    height: 200px !important;
+    width: auto !important;
+    margin: 0 auto;
+  }
 }
 
 .soao {
