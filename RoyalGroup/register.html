@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <title>Update</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>ROYAL<span>GROUP</span></h1>
+        </div>
+        <div class="line"></div>
+        <nav><a href="index.html">Home</a><a href="properties.html">Properties</a><a href="contact.html">Contact</a><a href="login.html">Log In</a></nav>
+      </div>
+    </header>
+    <section id="Pagebanner" style="background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./assets/img/banner.jpg); background-size: cover;background-position: center">
+      <div class="container">
+        <h1>Create Account</h1>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h3 class="callOut leftAlign">Create Account</h3>
+        <div class="contactContainer" style="padding: 0">
+          <form action="login.html">
+            <input type="text" placeholder="First Name"/>
+            <input type="text" placeholder="Last Name"/>
+            <input type="text" placeholder="User Name"/>
+            <input type="text" placeholder="Father/Guardian Name"/>
+            <input type="date"/>
+            <input type="email" placeholder="Email"/>
+            <input type="email" placeholder="Confirm Email"/>
+            <input type="text" placeholder="Phone Number"/>
+            <input type="text" placeholder="PAN Number"/>
+            <input type="text" placeholder="Aadhar Number"/>
+            <input type="password" placeholder="Password"/>
+            <input type="password" placeholder="Password Repeat"/>
+            <label for="pan" id="panLabel">Choose PAN Front Image</label>
+            <input type="file" id="pan" hidden="hidden"/>
+            <label for="aadhar" id="aadharLabel">Choose Aadhar Image</label>
+            <input type="file" id="aadhar" hidden="hidden"/>
+            <label for="profile" id="profileLabel">Choose Profile Image</label>
+            <input type="file" id="profile" hidden="hidden"/>
+            <input type="text" placeholder="Refered By"/>
+            <div class="termsConditions">
+              <input type="checkbox" id="terms" name="" required="required"/>
+              <label class="terms" for="terms">I agree to all Terms & Conditions of the Royal Groups</label>
+            </div>
+            <input class="cta" type="submit" value="Sign Up"/>
+          </form>
+        </div>
+        <div class="additional"><a href="login.html" style="margin-left: auto">I Already Have An Account</a></div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p class="copyrights">Copyright ©2021 All rights reserved | <span class="bold">ROYAL</span><span class="light">GROUP</span></p>
+      </div>
+    </footer>
+    <script>
+      var panFile = document.querySelector("#pan");
+      var label = document.querySelector("#panLabel");
+      var aadharFile = document.querySelector('#aadhar');
+      var aadharLabel = document.querySelector("#aadharLabel");
+      var profileFile = document.querySelector('#profile');
+      var profileLabel = document.querySelector("#profileLabel");
+      panFile.addEventListener('change', function(){
+          if(panFile.value){
+              var panName = panFile.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/
+      )[1];
+              panLabel.innerHTML = panName
+          }else{
+              panLabel.innerHTML = 'Choose PAN Front Image';
+          }
+      })
+      aadharFile.addEventListener('change', function(){
+          if(aadharFile.value){
+              var aadharName = aadharFile.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/
+      )[1];
+              aadharLabel.innerHTML = aadharName
+          }else{
+              aadharLabel.innerHTML = 'Choose Aadhar Image';
+          }
+      })
+      profileFile.addEventListener('change', function(){
+          if(profileFile.value){
+              var profileName = profileFile.value.match(/[\/\\]([\w\d\s\.\-\(\)]+)$/
+      )[1];
+              profileLabel.innerHTML = profileName
+          }else{
+              profileLabel.innerHTML = 'Choose Profile Image';
+          }
+      })
+    </script>
+    <script src="assets/scripts/script.js"></script>
+  </body>
+</html>

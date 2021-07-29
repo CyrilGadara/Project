@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../assets/css/styles.css"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <title>Update</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <header class="scrolled">
+      <div class="container">
+        <div class="logo">
+          <h1 class="navScrolled">ROYAL<span>GROUP</span></h1>
+        </div>
+        <div class="line"></div>
+        <nav><a class="navScrolled" href="index.html">Activities</a><a class="navScrolled active" href="referrals.html">Referrals</a><a class="navScrolled" href="buy.html">Buy a Plot</a>
+          <div class="profile"><span>User Name</span><img src="../assets/img/banner.jpg" alt=""/>
+            <div class="dropdown"><a href="profile.html">Profile</a><a href="../login.html">Log Out</a></div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section id="contact">
+      <div class="container" style="padding: 100px 0">
+        <h3 class="callOut">Referrals</h3>
+        <div class="contactContainer" style="padding: 0;overflow-x: auto; width: 90%; justify-content: flex-start">
+          <table>
+            <tr>
+              <th>S.No</th>
+              <th>Referred By</th>
+              <th>Referred To</th>
+              <th>Date</th>
+              <th>Referred Amount</th>
+            </tr>
+            <tr>
+              <td>01</td>
+              <td>Santhosh55</td>
+              <td>Santhosh31</td>
+              <td>29 Jan 2021</td>
+              <td>12000</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p class="copyrights">Copyright ©2021 All rights reserved | <span class="bold">ROYAL</span><span class="light">GROUP</span></p>
+      </div>
+    </footer>
+    <script src="assets/scripts/script.js"></script>
+    <script>
+      var profile = document.querySelector(".profile")
+      var dropdown = document.querySelector(".dropdown")
+      
+      profile.addEventListener('click', ()=>{
+          dropdown.classList.toggle('drop')
+      })
+    </script>
+  </body>
+</html>
